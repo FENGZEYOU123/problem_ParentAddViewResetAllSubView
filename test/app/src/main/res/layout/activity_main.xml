@@ -7,15 +7,15 @@
     tools:context=".MainActivity">
 
     <Button
-        android:text="添加新组件"
+        android:text="【点击添加新组件】"
         android:onClick="addView"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     </Button>
     <Button
-        android:text="记录子组件位置，添加新组件时，不重置位置"
+        android:text="【点击开启】记录子组件位置，添加新组件时，不重置位置"
         android:onClick="recordPosition"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
