@@ -87,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
                         marginLayoutParams.topMargin = top;
                         marginLayoutParams.rightMargin = right;
                         marginLayoutParams.bottomMargin = bottom;
+                        marginLayoutParams.height=view.getHeight();
+                        marginLayoutParams.width=view.getWidth();
                         view.setLayoutParams(marginLayoutParams);
                     }
                     break;
