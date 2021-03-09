@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.webkit.WebView;
 import android.widget.LinearLayout;
 
@@ -18,7 +19,7 @@ import java.util.ArrayList;
  *
  * layout方法虽然会改变组件位置，但是其位置坐标信息不会被记录在layoutParam中，其父组件是根据子组件的layoutParam来判断其位置的。
  * 所以当父组件有新添加其他组件时（刷新页面），所有的子组件也会被刷新，那么子组件的layoutParam的值没有变化，自然就会回到原来位置。
- * 结论：如果父组件刷新时，不想重置子组件位置，就要把子组件的位置记录在其layoutParam中。
+ * 结论：如果父组件刷新时，不想重置子组件位置，就要把子组件的位置记录在子组件的layoutParam中。
  */
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Integer> colorArray=new ArrayList<>();
